@@ -1,0 +1,80 @@
+
+
+/*HOME*/
+#home{
+  background: rgb(0, 101, 219);
+  background: linear-gradient(90deg, rgb(4, 83, 173)50%,rgb(20, 151, 177)100%);
+  min-height: 400px;
+
+}
+
+/*pikdrop*/
+.g{
+  background-color: #007ec4 ;
+
+}
+/*Cards*/
+.card{
+transition: pointer;
+}
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/*Footer*/
+.footer{
+  background: rgb(44, 44, 45);
+  background: linear-gradient(90deg,rgba(0,126,196,255) 50%, rgb(4, 83, 173)100%);
+ 
+}
+
+
+
+/*Form*/
+.form{
+  background: rgb(0, 101, 219);
+  background: linear-gradient(90deg, rgb(4, 83, 173)50%,rgb(3, 38, 113)100%);
+  
+}
+
+.section1{
+  background-color: #f1f1f1;
+}
+
+
+.navbar-brand {
+  margin-right: auto; /* Pushes the logo to the left */
+  margin-left: 20px; /* Adds some space between logo and links */
+}
+
+.bgcolor{
+  background-color: #007ec4;
+}
+.sticky {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #007ec4;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    border-bottom: solid 1px var(--primary-color);
+    opacity: 1.0;
+    top: 0;
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
+      -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+}
+
+/* Add hover effect styles for navigation links */
+
+
+
+
+
+@import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+
+/* Bootstrap Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css");

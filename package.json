@@ -1,0 +1,18 @@
+{
+  "name": "taxipik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mernweb": "cd mernweb && npm start",
+    "server": "cd server && npm run dev",
+    "start": "concurrently \"npm run mernweb\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
