@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "mernweb": "cd mernweb && npm start",
     "server": "cd server && npm run dev",
-    "start": "concurrently \"npm run mernweb\" \"npm run server\""
+    "dev": "concurrently \"npm run mernweb\" \"npm run server\""
   },
   "keywords": [],
   "author": "",

@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Pagination from '../components/Pagination';
+import PaginationMsz from '../components/PaginationMsz';
 
 
 
@@ -127,82 +128,8 @@ const Dashboard = () => {
                         </a>
                     </li>
                 </ul>
-     {/*            <!-- Divider --> */}
-                <hr class="navbar-divider my-5 opacity-20"/>
-       {/*          <!-- Navigation --> */}
-                <ul class="navbar-nav mb-md-4">
-                    <li>
-                        <div class="nav-link text-xs font-semibold text-uppercase text-muted ls-wide" href="#">
-                            Contacts
-                            <span class="badge bg-soft-primary text-primary rounded-pill d-inline-flex align-items-center ms-4">13</span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link d-flex align-items-center">
-                            <div class="me-4">
-                                <div class="position-relative d-inline-block text-white">
-                                    <img alt="Image Placeholder" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar rounded-circle"/>
-                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="d-block text-sm font-semibold">
-                                    Marie Claire
-                                </span>
-                                <span class="d-block text-xs text-muted font-regular">
-                                    Paris, FR
-                                </span>
-                            </div>
-                            <div class="ms-auto">
-                                <i class="bi bi-chat"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link d-flex align-items-center">
-                            <div class="me-4">
-                                <div class="position-relative d-inline-block text-white">
-                                    <span class="avatar bg-soft-warning text-warning rounded-circle">JW</span>
-                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="d-block text-sm font-semibold">
-                                    Michael Jordan
-                                </span>
-                                <span class="d-block text-xs text-muted font-regular">
-                                    Bucharest, RO
-                                </span>
-                            </div>
-                            <div class="ms-auto">
-                                <i class="bi bi-chat"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link d-flex align-items-center">
-                            <div class="me-4">
-                                <div class="position-relative d-inline-block text-white">
-                                    <img alt="..." src="https://images.unsplash.com/photo-1610899922902-c471ae684eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar rounded-circle"/>
-                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-danger rounded-circle"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="d-block text-sm font-semibold">
-                                    Heather Wright
-                                </span>
-                                <span class="d-block text-xs text-muted font-regular">
-                                    London, UK
-                                </span>
-                            </div>
-                            <div class="ms-auto">
-                                <i class="bi bi-chat"></i>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-   {/*              <!-- Push content down --> */}
-                <div class="mt-auto"></div>
+ 
+
         {/*         <!-- User (md) --> */}
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -211,9 +138,12 @@ const Dashboard = () => {
                         </a>
                     </li>
                     <li class="nav-item">
-                        <NavLink to={"/"}>
+                        {/* <NavLink to={"/"}>
                             <i class="bi bi-box-arrow-left"></i> Logout
-                        </NavLink>
+                        </NavLink> */}
+
+<NavLink to="/" className="nav-link"><i class="bi bi-box-arrow-left"></i> Logout
+                           </NavLink>
                     </li>
                 </ul>
             </div>
@@ -232,20 +162,39 @@ const Dashboard = () => {
                         </div>
                     {/*     <!-- Actions --> */}
                         <div class="col-sm-6 col-12 text-sm-end">
-                            <div class="mx-n1">
-                                <a href="#" class="btn d-inline-flex btn-sm btn-neutral border-base mx-1">
-                                    <span class=" pe-2">
-                                        <i class="bi bi-pencil"></i>
-                                    </span>
-                                    <span>Edit</span>
-                                </a>
-                                <a href="#" class="btn d-inline-flex btn-sm btn-primary mx-1">
-                                    <span class=" pe-2">
-                                        <i class="bi bi-plus"></i>
-                                    </span>
-                                    <span>Create</span>
-                                </a>
-                            </div>
+                        <div class="container py-1 h-100"> {/* Reduce container padding */}
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col col-md-9 col-lg-7 col-xl-6">
+      <div class="card" style={{ borderRadius: "6px" }}> {/* Further reduce border radius */}
+        <div class="card-body p-1"> {/* Reduce padding */}
+          <div class="d-flex text-black">
+            <div class="flex-shrink-0">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+                alt="Generic placeholder image"
+                class="img-fluid"
+                style={{ width: "80px", borderRadius: "6px" }} /> {/* Reduce image width and border radius */}
+            </div>
+            <div class="flex-grow-1 ms-1"> {/* Reduce margin-start */}
+              <h6 class="mb-0">Shreyas kodial</h6> {/* Use a smaller heading */}
+              <p class="mb-0 pb-0" style={{ color: "#2b2a2a", fontSize: "12px" }}>Manager</p> {/* Further reduce font size */}
+              <div class="d-flex justify-content-between rounded-3 p-0 mb-0" style={{ backgroundColor: "#efefef" }}>
+               
+            
+               
+              </div>
+              <div class="d-flex pt-0">
+               
+                <button type="button" class="btn btn-primary flex-grow-1 btn-sm">profile</button> {/* Added btn-sm for smaller buttons */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
                         </div>
                     </div>
                 {/*     <!-- Nav --> */}
@@ -366,10 +315,24 @@ const Dashboard = () => {
                         <h5 class="mb-0">Applications</h5>
                     </div>
                     <div class="table-responsive">
-                    <Pagination itemsPerPage={10} data={bookings} />
+                    <Pagination itemsPerPage={8} data={bookings} />
                     </div>
-                    <div class="card-footer border-0 py-5">
-                        <span class="text-muted text-sm">Showing 10 items out of 250 results found</span>
+                    
+                    <div class="card-footer border-0 py-3">
+                        {/* <span class="text-muted text-sm">Showing 10 items out of 250 results found</span> */}
+                    </div>
+                </div>
+
+
+                <div class="card shadow border-0 mb-7">
+                    <div class="card-header">
+                        <h5 class="mb-0">Messages</h5>
+                    </div>
+                    <div class="table-responsive">
+                    <PaginationMsz itemsPerPage={8} data={messages} />
+                    </div>
+                    <div class="card-footer border-0 py-2">
+                        {/* <span class="text-muted text-sm">Showing 10 items out of 250 results found</span> */}
                     </div>
                 </div>
             </div>
