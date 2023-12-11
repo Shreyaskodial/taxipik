@@ -17,9 +17,7 @@ const Home = () => {
       <Slider/>
       <div className="container my-4 py-5"> </div>
       <HomePage/>
-      <AboutUs/>
       <ServicesUs/>
-      <ContactUs/>
       <Footer/>
     </div>
   )
