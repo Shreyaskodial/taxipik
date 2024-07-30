@@ -5,8 +5,7 @@ import { NavLink } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div>
-
-
+{/* home */}
 <div className="container  mt-20"> </div>
       
 
