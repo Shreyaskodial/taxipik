@@ -23,6 +23,7 @@ import DashbordMsz from "./pages/DashbordMsz";
 import Bookings from "./pages/Bookings";
 import BookingsUpdate from "./pages/BookingsUpdate";
 import BookConfirmed from "./pages/BookConfirmed";
+import Forgot_password from "./components/Forgot_password";
 
 // import { Router,Route } from 'react-router-dom';
 
@@ -39,6 +40,7 @@ function App() {
   <Route path="/service" element={<Services/>}/>
   <Route path="/contact" element={<Contact/>}/>
   <Route path="/login" element={<Login/>}/>
+  <Route path="/forgot_password" element={<Forgot_password/>}/>
   <Route path="/register" element={<Register/>}/>
   <Route path="/dashbord" element={<Dashboard/>}/>
   <Route path="/logout" element={<Logout/>}/>

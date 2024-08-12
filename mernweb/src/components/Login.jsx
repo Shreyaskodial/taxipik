@@ -85,7 +85,7 @@ const Login = () => {
                           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                           <label class="form-check-label" for="exampleCheck1">Remember me</label>
                      </div>
-                      <a href="/forgot-password" class="btn btn-link mt-2">Forgot Password?</a>
+                      <NavLink to="/forgot-password" class="btn btn-link mt-2">Forgot Password?</NavLink>
                      </div>
                                 <button type="submit" class="btn btn-primary w-100 mt5 rounded-pill">Login</button>
                             </form>
